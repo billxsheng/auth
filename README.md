@@ -14,7 +14,7 @@
 - server validates it against the session store and grants access
 - logout destroys the session and clears the cookie
 
-###Features
+### Features
 - every user session is stored server-side (stateful)
   - session stored in DB
 - each user is identified by a session ID
@@ -24,23 +24,23 @@
     - signed with a secret (client cannot tamper with the cookie)
     - protected with flags
     
-###Cookies
+### Cookies
 - Cookie is a header, just like authorization or content-type
 - cookie consists of name and value
 - set with Set-Cookie by server
 - cookie is signed with a secret
 
-###Attributes
+### Attributes
 - cookie can only be used on a given site and route (Domain and Path)
 - Expiration sets expiry
   - when omitted it becomes a session cookie that is deleted when browser is closed
 
-###Flags
+### Flags
 HTTPOnly (cannot be read by client side)
 Secure (can only be sent over HTTPS channel)
 
-##Tokens
-###Flow
+## Tokens
+### Flow
 - user submits login credentials
 - server verifies credentials
 - server creates token and embeds user data into it
@@ -50,25 +50,30 @@ Secure (can only be sent over HTTPS channel)
 - server verifies the token and grants access
 - when user logs out, token is cleared
 
-###Features
+### Features
 - tokens are not stored server-side, only to client (stateless)
 - signed with secret
 - tokens can be opaque or self-contained
 
-###JWT
+### JWT
 - open standard
 - compact, self-contained, URL-safe tokens
 
-###Client Storage
+### Client Storage
 - JWT can be stored in client storage, local or session
   - local has no expiration time
   - session gets cleared when page is closed
   
-##Sessions vs JWT
-###Sessions and Cookies
-####Pros
+## Sessions vs JWT
+### Sessions and Cookies
+#### Pros
 - 
-####Cons
+#### Cons
+
+### Tokens
+#### Pros
+- 
+#### Cons
 
    
 
