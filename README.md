@@ -30,7 +30,7 @@
 - set with Set-Cookie by server
 - cookie is signed with a secret
 
-###CSRF
+### CSRF
 - unauthorized actions on behalf of the user
 - mitigate using CSRF token
 
@@ -89,6 +89,26 @@ Secure (can only be sent over HTTPS channel)
 - if JWT token is compromised, attacker can really do damage
 
 ## OAuth 2
+### Overview
+- allows users to authenticate themselves using a third-party authentiation service
+
+### Example
+- logging into spotify via facebook
+- passwords are never passed around
+
+### Workflow
+- using spotify and facebook example
+- spotify sends an auth request to facebook api
+- displays facebook screen asking to authorize spotify to access facebook account information
+- authorization grant sent back to spotify along with auth code/access token that spotify will use to access your facebook account
+- spotify sends the token to facebook and facebook sends back the protected resource 
+- OAuth 2 is the authorization framework
+- authentication is done with OpenID Connect using ID tokens
+
+###OpenID Connect
+- identity layer on top of OAuth 2 
+- allows clints to verify identity based on authentication performed by an auth server as well as to obtain basic profile info abbout the end user
+
 
    
 
