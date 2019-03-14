@@ -4,8 +4,8 @@
 - stateful (ie. session uisng a cookie)
 - stateless (ie. token using JWT/OAuth)
 
-##Sessions
-###Flow
+## Sessions
+### Flow
 - user submits login credentials
 - server verifies credentials against the DB
 - server creates a temp user session
