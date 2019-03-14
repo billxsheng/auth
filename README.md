@@ -30,6 +30,10 @@
 - set with Set-Cookie by server
 - cookie is signed with a secret
 
+###CSRF
+- unauthorized actions on behalf of the user
+- mitigate using CSRF token
+
 ### Attributes
 - cookie can only be used on a given site and route (Domain and Path)
 - Expiration sets expiry
@@ -63,17 +67,28 @@ Secure (can only be sent over HTTPS channel)
 - JWT can be stored in client storage, local or session
   - local has no expiration time
   - session gets cleared when page is closed
-  
+
 ## Sessions vs JWT
 ### Sessions and Cookies
 #### Pros
-- 
+- Session ID is opaque and carry no meaningful data
+- Cookies can be secured with flags
+- old-school
 #### Cons
+- server must store each user in memory
+- session auth must be secured against CSRF
 
 ### Tokens
 #### Pros
-- 
+- server does not have to keep track of sessions
+- any server can verify the token
+- CORS is not an issue
 #### Cons
+- Server still has to maintain a blacklist of revoked tokens
+- token is cached and can go stale
+- if JWT token is compromised, attacker can really do damage
+
+## OAuth 2
 
    
 
