@@ -1,7 +1,7 @@
 # Authentication
 - authentication: verifying identity (401 Unauthorized)
 - authorization: verifying permissions (403 Forbidden)
-- stateful (ie. session uisng a cookie)
+- stateful (ie. session using a cookie)
 - stateless (ie. token using JWT/OAuth)
 
 ## Sessions
