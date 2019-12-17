@@ -105,7 +105,7 @@ Secure (can only be sent over HTTPS channel)
 - OAuth 2 is the authorization framework
 - authentication is done with OpenID Connect using ID tokens
 
-###OpenID Connect
+### OpenID Connect
 - identity layer on top of OAuth 2 
 - allows clints to verify identity based on authentication performed by an auth server as well as to obtain basic profile info about the end user
 
