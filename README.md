@@ -49,7 +49,7 @@ Secure (can only be sent over HTTPS channel)
 - server verifies credentials
 - server creates token and embeds user data into it
 - server responds back with the token (in body or header)
-- ser stores the token in client storage
+- user stores the token in client storage
 - user sends the token along each request
 - server verifies the token and grants access
 - when user logs out, token is cleared
@@ -77,6 +77,7 @@ Secure (can only be sent over HTTPS channel)
 #### Cons
 - server must store each user in memory
 - session auth must be secured against CSRF
+- Rise of internet privacy has compromised this method
 
 ### Tokens
 #### Pros
