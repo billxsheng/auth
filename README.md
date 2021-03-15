@@ -81,7 +81,7 @@ Secure (can only be sent over HTTPS channel)
 
 ### Tokens
 #### Pros
-- server does not have to keep track of sessions
+- server does not have to keep track of sessions, no server-side session needs to be implemented (database, cache) (stateless)
 - any server can verify the token
 - CORS is not an issue
 #### Cons
