@@ -84,6 +84,7 @@ Secure (can only be sent over HTTPS channel)
 - server does not have to keep track of sessions, no server-side session needs to be implemented (database, cache) (stateless)
 - any server can verify the token
 - CORS is not an issue
+- Good practice is to actually store the JWT in a cookie in oppose to local storage accessible by JS
 #### Cons
 - Server still has to maintain a blacklist of revoked tokens
 - token is cached and can go stale
